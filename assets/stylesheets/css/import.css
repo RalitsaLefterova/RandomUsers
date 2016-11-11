@@ -53,15 +53,14 @@ table {
 }
 
 body {
-  color: #405275;
-  padding: 0;
-  margin: 0;
+  display: block;
+  max-width: 100%;
   width: 100%;
   height: 100%;
-  display: block;
-  background-color: #f0edf2;
-  max-width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  background-color: #f0edf2;
   font: normal normal normal 10px Arial,sans-serif;
   font-size: 11px;
   line-height: 1.4;
@@ -69,31 +68,163 @@ body {
 
 #container {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border: 2px solid red;
+  width: 360px;
+  margin: 30px auto;
+}
+@media (min-width: 480px) {
+  #container {
+    width: 360px;
+  }
+}
+@media (min-width: 768px) {
+  #container {
+    width: 720px;
+  }
 }
 #container__users {
-  width: 90%;
+  display: block;
   margin: 0 auto;
 }
-#container__users li {
-  background-color: #bbb;
-  border: 1px solid #ccc;
-  height: 50px;
-  vertical-align: middle;
+#container__users ul {
+  display: block;
 }
-#container__users li a {
-  line-height: 50px;
-  border: 1px solid green;
+#container__users ul li {
+  display: inline-block;
+  width: 360px;
+  height: 60px;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+#container__users ul li a {
+  display: block;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 5px 20px;
+  margin: 10px 5px;
+  line-height: 16px;
+  vertical-align: middle;
   text-decoration: none;
   color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  transition: all .5s ease;
+  box-shadow: 0 0 5px #bbb;
+}
+#container__users ul li a img {
+  float: left;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #ddd;
+}
+#container__users ul li a p {
+  padding-top: 10px;
+  padding-left: 80px;
+  vertical-align: top;
+}
+#container__users ul li a .name {
+  font-size: 16px;
+}
+#container__users ul li a .city {
+  font-size: 11px;
+  font-style: italic;
+  color: #808080;
+}
+#container__users ul li a:hover {
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+}
+#container__users ul li a:hover img {
+  border: 3px solid #bbb;
 }
 
-.male {
-  background-color: blue;
+.navigation {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.navigation a.all-users-btn {
+  padding: 10px 40px;
+  background-color: #606060;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.navigation a.all-users-btn:hover {
+  background-color: #404040;
 }
 
-.female {
-  background-color: red;
+#user-details {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #fff;
+  box-shadow: 0 0 5px #bbb;
+}
+#user-details img {
+  border-radius: 50%;
+}
+#user-details .user-name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+#user-details table {
+  width: 240px;
+  margin: 10px auto;
+  background-color: #808080;
+  border-collapse: collapse;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+#user-details table tr:first-child td {
+  padding-top: 6px;
+}
+#user-details table tr:last-child td {
+  padding-bottom: 6px;
+}
+#user-details table tr td {
+  padding: 3px;
+  text-align: left;
+}
+#user-details table tr td:first-child {
+  padding-right: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+#user-details table tr td.user-email a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+#user-details table tr td.user-email a:hover {
+  color: #ccc;
+}
+
+.male img {
+  border: 5px solid #0d47a1;
+}
+.male .user-name {
+  color: #0d47a1;
+}
+
+.female img {
+  border: 5px solid #ba141b;
+}
+.female .user-name {
+  color: #ba141b;
 }

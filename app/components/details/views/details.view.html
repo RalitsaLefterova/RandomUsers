@@ -1,17 +1,34 @@
-<div class="" ng-class="user.gender">
-  {{ user }}
-  <br />
-  <img ng-src="{{ user.picture.large }}">
-  <br />
-  {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
-  <br />
-  E-mail: <a ng-href="mailto:{{ user.email }}">{{ user.email }}</a>
-  <br />
-  Phone: {{ user.phone }}
-  <br />
-  City: {{ user.location.city }}
-  <br />
-  Address: {{ user.location.street }}
-  <br />
-  Gender: {{ user.gender }}
+<div class="navigation">
+  <a href="#/" class="all-users-btn">
+    Back to all users:
+  </a>
+</div>
+<div id="user-details" class="" ng-class="user.gender">
+  <!-- {{ user }} -->
+  <img class="user-photo" ng-src="{{ user.picture.large }}">
+  <p class="user-name">
+    {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+  </p>
+  <table>
+    <tr>
+      <td>E-mail</td>
+      <td class="user-email"><a ng-href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td>{{ user.location.city }}</td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>{{ user.location.street }}</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>{{ user.gender }}</td>
+    </tr>
+  </table>
 </div>
