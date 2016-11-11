@@ -1,0 +1,14 @@
+<div id="container__users">
+  <ul>
+
+      <li ng-repeat="user in users.results track by $index">
+        <a ng-href="#details/{{ $index }}">
+          nomer: {{ $index }}
+          <img ng-src="{{ user.picture.thumbnail }}">
+          Full name: {{ user.name.first }} {{ user.name.last }}
+          City: {{ user.location.city }}
+        </a>
+      </li>
+
+  </ul>
+</div>

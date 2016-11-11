@@ -1,0 +1,17 @@
+<div class="" ng-class="user.gender">
+  {{ user }}
+  <br />
+  <img ng-src="{{ user.picture.large }}">
+  <br />
+  {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+  <br />
+  E-mail: <a ng-href="mailto:{{ user.email }}">{{ user.email }}</a>
+  <br />
+  Phone: {{ user.phone }}
+  <br />
+  City: {{ user.location.city }}
+  <br />
+  Address: {{ user.location.street }}
+  <br />
+  Gender: {{ user.gender }}
+</div>

@@ -1,0 +1,45 @@
+body {
+  color: #405275;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #f0edf2;
+  max-width: 100%;
+  overflow-x: hidden;
+  font: normal normal normal 10px Arial,sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+#container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+#container__users {
+  width: 90%;
+  margin: 0 auto;
+}
+#container__users li {
+  background-color: #bbb;
+  border: 1px solid #ccc;
+  height: 50px;
+  vertical-align: middle;
+}
+#container__users li a {
+  line-height: 50px;
+  border: 1px solid green;
+  text-decoration: none;
+  color: #000;
+}
+
+.male {
+  background-color: blue;
+}
+
+.female {
+  background-color: red;
+}

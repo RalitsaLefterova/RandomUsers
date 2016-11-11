@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/css/import.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+</head>
+<title>Random Users</title>
+<body ng-app="myApp">
+
+  <div id="container">
+    <a href="#/">
+      <span>All Users:</span>
+    </a>
+      <!-- start dynamic content -->
+        <ng-view></ng-view>
+      <!-- end dynamic content -->
+  </div>
+
+
+<script src="config.js"></script>
+<script type="text/javascript" src="assets/javascripts/main.js"></script>
+<script type="text/javascript" src="assets/javascripts/jquery.simplePagination.js"></script>
+<script type="text/javascript" src="app/components/users/controllers/usersController.js"></script>
+<script type="text/javascript" src="app/components/details/controllers/detailsController.js"></script>
+
+</body>
+</html>
